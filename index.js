@@ -15,7 +15,7 @@ let generatedPads = [];
 
 async function runner() {
   console.log('\n----------------------------');
-  console.log('Codestitch Pad Generator version 1.0.0');
+  console.log('Codestitch Pad Creator version 1.0.0');
   console.log('Created by Kevin Jang');
   console.log('----------------------------\n');
 
@@ -26,12 +26,12 @@ async function runner() {
 
   generatePads(padsToGenerate)
     .then(() => {
-        console.log('\nDone!\n');
-        console.log('Here are the generated pads:');
-        console.log('----------------------------');
-        console.log(generatedPads.join('\n'));
-        process.exit();
-      });
+      console.log('\nDone!\n');
+      console.log('Here are the generated pads:');
+      console.log('----------------------------');
+      console.log(generatedPads.join('\n'));
+      process.exit();
+    });
 }
 
 function promptForDetails() {
@@ -90,6 +90,7 @@ function codestitchLogin() {
       .catch((err) => {
         console.log('\nSomething went wrong. Check your network connection or increase the delay in index.js (line 8).');
         console.log(err);
+        reject(err);
         process.exit();
       });
   });
@@ -109,7 +110,8 @@ function generatePad(i) {
     .then((url) => {
       console.log(`Pad number ${i+1} generated! ${url}`);
       resolve(url);
-    });
+    })
+    .catch(err => reject(err));
   });
 }
 
