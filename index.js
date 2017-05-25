@@ -102,7 +102,7 @@ function generatePad(i) {
     .wait(delay)
     .url()
     .then((url) => {
-      console.log(`Pad number ${i+1} generated!`);
+      console.log(`Pad number ${i+1} generated! ${url}`);
       resolve(url);
     });
   });
