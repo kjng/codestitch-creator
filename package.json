@@ -4,6 +4,7 @@
   "description": "Makes n number of codestitch pads automatically after providing an email, password, and the number of pads to generate",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Jang",
