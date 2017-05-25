@@ -10,7 +10,7 @@ While I was a Hacker in Residence at Hack Reactor, I gave lectures for the prep 
 2. Run `npm install` to install dependencies
 3. Run `npm start` to start the pad creator
 4. Enter in your codestitch username, password, and the number of pads to generate
-5. WARNING! **Be careful not to enter too high of a number of generated pads!**
+5. WARNING! **Be careful not to accidently enter too high of a number of generated pads!** If this happens, press `Ctrl+C` to exit the program.
 6. If all goes well, your generated pads will be logged!
 
 ### Dependencies
