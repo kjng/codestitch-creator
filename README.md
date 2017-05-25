@@ -12,6 +12,12 @@ While I was a Hacker in Residence at Hack Reactor, I gave lectures for the prep 
 4. Enter in your codestitch username, password, and the number of pads to generate
 5. WARNING! **Be careful not to accidently enter too high of a number of generated pads!** If this happens, press `Ctrl+C` to exit the program.
 6. If all goes well, your generated pads will be logged!
+7. Example Output (one link per line):
+    ```
+    https://codestitch.io/abcdefgh
+    https://codestitch.io/ijklmnop
+    https://codestitch.io/qrstuvwx
+    ```
 
 ### Dependencies
 
