@@ -1,0 +1,11 @@
+{
+  "name": "codestitch-creator",
+  "version": "1.0.0",
+  "description": "Makes n number of codestitch pads automatically after providing a username and email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Jang",
+  "license": "ISC"
+}
