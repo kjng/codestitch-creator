@@ -5,7 +5,7 @@ const prompt = require('prompt');
 const nightmare = Nightmare();
 
 // Delay (ms) for page switches. Increase if it is too low!
-const delay = 1000;
+const delay = 2000;
 
 // User input and generated pads
 let email = '';
@@ -78,7 +78,7 @@ function codestitchLogin() {
       .goto('https://codestitch.io/auth/sign_in')
       .type('#user_email', email)
       .type('#user_password', password)
-      .click('input[value="Sign in"') // not as dynamic
+      .click('input[value="Sign in"]') // not as dynamic
       .wait(delay)
       .url()
       .then((url) => {
