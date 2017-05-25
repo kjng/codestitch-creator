@@ -7,11 +7,14 @@ const nightmare = Nightmare();
 // Delay (ms) for page switches. Increase if it is too low!
 const delay = 2000;
 
-const url = 'https://codestitch.io/pads';
+// User input and generated pads
 let email = '';
 let password = '';
 let padsToGenerate = 0;
 let generatedPads = [];
+
+// Runs main function
+runner();
 
 async function runner() {
   console.log('\n----------------------------');
@@ -72,7 +75,7 @@ function promptForDetails() {
 function codestitchLogin() {
   return new Promise((resolve, reject) => {
     nightmare
-      .goto(url)
+      .goto('https://codestitch.io/pads')
       .type('#user_email', email)
       .type('#user_password', password)
       .click('input[value="Sign in"') // not as dynamic
@@ -114,6 +117,3 @@ function generatePad(i) {
     .catch(err => reject(err));
   });
 }
-
-// Runs main function
-runner();
