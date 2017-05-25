@@ -1,11 +1,15 @@
 {
   "name": "codestitch-creator",
   "version": "1.0.0",
-  "description": "Makes n number of codestitch pads automatically after providing a username and email",
+  "description": "Makes n number of codestitch pads automatically after providing an email, password, and the number of pads to generate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kevin Jang",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nightmare": "^2.10.0",
+    "prompt": "^1.0.0"
+  }
 }
