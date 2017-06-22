@@ -109,12 +109,12 @@ async function generatePads(n) {
 function generatePad(i) {
   return new Promise((resolve, reject) => {
     nightmare.goto('https://codestitch.io/pads/new')
-    .wait(GENERATE_DELAY)
-    .url()
-    .then((url) => {
-      console.log(`Pad number ${i+1} generated! ${url}`);
-      resolve(url);
-    })
-    .catch(err => reject(err));
+      .wait(GENERATE_DELAY)
+      .url()
+      .then((url) => {
+        console.log(`Pad number ${i+1} generated! ${url}`);
+        resolve(url);
+      })
+      .catch(err => reject(err));
   });
 }
